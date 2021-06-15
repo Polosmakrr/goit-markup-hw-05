@@ -428,9 +428,7 @@ p {
 }
 
 .icon-list a:hover,
-.icon-list a:focus,
-.card-icons:hover,
-.card-icons:focus {
+.icon-list a:focus {
   background-color: var(--excretion-color);
   fill: var(--background-main);
 }
@@ -475,8 +473,8 @@ p {
 .company-logo {
   width: 106px;
   height: 60px;
-  transition-property: fill;
-  transition-duration: 250ms;
+  transition-property: fill, border-color;
+  transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -513,7 +511,7 @@ p {
   padding-right: 22px;
   border-radius: 4%;
   border: none;
-  transition-property: box-shadow;
+  transition-property: box-shadow, color, background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -562,6 +560,14 @@ p {
 }
 
 .project-card {
+  position: relative;
+  overflow: hidden;
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-tool{
   position: relative;
   overflow: hidden;
 }
@@ -615,7 +621,7 @@ p {
   width: 100%;
   height: 100%;
   background-color: #00000033;
-  transition-property: opacity;
+  transition-property: opacity, visibility;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
